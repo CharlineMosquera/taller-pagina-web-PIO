@@ -12,25 +12,21 @@ body {
   position: relative;
 }
 
-#banner {
+.banner {
   position: relative;
   justify-content: center;
   overflow: hidden;
 }
 
-#imagen-bn {
+.img-banner {
   opacity: 0;
-  transition: fadeIn 2s ease-in-out fowards;
+  transition: opacity 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.visible {
+  opacity: 1;
 }
+
 #titulo {
   position: absolute;
   width: 100%;
