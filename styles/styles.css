@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Impact&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 body {
   background-color: black;
   color: white;
@@ -20,7 +21,7 @@ body {
 
 .img-banner {
   opacity: 0;
-  transition: opacity 2s ease-in-out;
+  transition: opacity 3s ease-in-out;
 }
 
 .visible {
@@ -34,7 +35,7 @@ body {
 
 h1 {
   font-family: "Impact", sans-serif;
-  font-size: 5vw;
+  font-size: 8vw;
   color: transparent;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -49,4 +50,63 @@ footer {
   height: 50px;
   justify-content: center;
   text-align: center;
+}
+
+.top-saga {
+  padding-top: 50px;
+}
+
+.title-top3 {
+  padding-bottom: 0px;
+}
+
+@media (max-width: 760px) {
+  .top3,
+  .acordeon-container,
+  .resenas,
+  .form-container,
+  footer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .video-container {
+    padding-top: 20px;
+  }
+}
+.form-container,
+.acordeon-container {
+  padding-top: 50px;
+}
+
+.form-container {
+  padding-bottom: 50px;
+}
+.form-container .col-lg-4 {
+  justify-content: center;
+}
+
+.form-contacto {
+  justify-content: center;
+}
+
+.msg-form {
+  justify-content: center;
+}
+.msg-form p {
+  font-family: "Creepster", cursive;
+  font-size: 1.5rem;
+  color: #ff0000;
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.msg-form p:hover {
+  transform: scale(1.05);
+  color: #ff6666;
+}
+
+.resenas {
+  overflow: scroll;
+  height: 55vh;
 }/*# sourceMappingURL=styles.css.map */

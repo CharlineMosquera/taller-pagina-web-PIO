@@ -20,7 +20,7 @@
     <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Blog Scary Movie</a>
+            <a class="navbar-brand" href="index.html">Blog Scary Movie</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,13 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galería</a>
+                        <a class="nav-link" href="#title-top3">Galería</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -48,6 +48,208 @@
         </div>
         <div>
             <img src="./img/banner-sala-cine.jpg" class="img-fluid img-banner" alt="Scary Movie Portada">
+        </div>
+    </div>
+
+    <div class="container text-center top-saga">
+        <div class="row title-top3" id="title-top3">
+            <h3>Top Mejores Peliculas de la Saga</h3>
+        </div>
+        <div class="row">
+            <!-- Tarjetas TOP 3 -->
+            <div class="col-lg-9 col-md-7 col-sm-5 top3">
+
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./img/ScaryMovie2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Scary Movie 2</h5>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/ScaryMovie.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Scary Movie</h5>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/ScaryMovie4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Scary Movie 4</h5>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Reseñas y Opiniones -->
+            <div class="col-lg-3 col-md-5 col-sm-7 resenas">
+                <h4>Reseñas y Opiniones</h4>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Reseña Scary Movie 2</h5>
+                        <p class="card-text">"Un clásico de la comedia de terror. La mezcla perfecta entre humor y
+                            parodia. Definitivamente una de las mejores de la saga."</p>
+                        <p class="card-text"><small class="text-muted">Reseñado por Juan</small></p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Reseña Scary Movie</h5>
+                        <p class="card-text">"La película que lo inició todo. Aunque algunas bromas son exageradas,
+                            sigue siendo una de las más icónicas."</p>
+                        <p class="card-text"><small class="text-muted">Reseñado por María</small></p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Reseña Scary Movie 4</h5>
+                        <p class="card-text">"No tan buena como las primeras, pero sigue siendo divertida. Tiene algunos
+                            momentos memorables que vale la pena ver."</p>
+                        <p class="card-text"><small class="text-muted">Reseñado por Carlos</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Acordeon de la saga completa -->
+    <div class="container text-center acordeon-container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- Acordeón Item #1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Scary Movie (2000)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Sinopsis: Un grupo de adolescentes es acechado por un asesino enmascarado tras
+                                atropellar accidentalmente a un hombre y encubrir el crimen. La película parodia
+                                múltiples filmes de terror clásicos como Scream y Sé lo que hicieron el verano pasado,
+                                con un enfoque cómico y absurdo que la convirtió en un éxito.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Acordeón Item #2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Scary Movie 2 (2001)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Sinopsis: Unos universitarios son invitados a pasar la noche en una mansión embrujada
+                                como parte de un experimento paranormal. Las cosas rápidamente se descontrolan cuando
+                                los espíritus comienzan a manifestarse. Esta secuela parodia películas como El exorcista
+                                y Poltergeist.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Acordeón Item #3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Scary Movie 3 (2003)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Sinopsis: En esta tercera entrega, una reportera investiga un misterioso círculo en un
+                                campo de maíz mientras se enfrenta a una cinta maldita que amenaza con matar a quien la
+                                vea. La película parodia títulos como El aro, Señales, y Matrix.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Acordeón Item #4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Scary Movie 4 (2006)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Sinopsis: Cindy Campbell vuelve en esta cuarta entrega donde debe salvar al mundo de una
+                                invasión alienígena, mientras se enfrenta a nuevos y ridículos obstáculos. Parodia
+                                películas como La guerra de los mundos, Saw y El grito.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Acordeón Item #5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                Scary Movie 5 (2013)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Sinopsis: Una joven pareja empieza a experimentar fenómenos paranormales en su casa tras
+                                adoptar a los hijos de su hermano. Mientras intentan resolver el misterio, la película
+                                parodia títulos recientes como Actividad Paranormal, El cisne negro y Mamá.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Mejores Escenas -->
+            <div class="col-lg-6 col-md-6 video-container">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3qu4HMkht_k?si=fBfdgzac66UBsOzf"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="container form-container">
+        <div class="row form-contacto">
+            <div class="col-lg-3 msg-form">
+                <p>Dejanos tu telefono!<br>Te llamaremos a preguntar cual es tu pelicula de terror favorita</p>
+            </div>
+            <div class="col-lg-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" id="exampleInputNumber1" rows="3"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
 

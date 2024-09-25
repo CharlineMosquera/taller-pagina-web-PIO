@@ -1,56 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Impact&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
 $color-scary: rgba(255, 0, 0, 0.9);
 
 body {
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
 .navbar {
-    z-index: 10;
-    position: relative;
+  z-index: 10;
+  position: relative;
 }
 
 .banner {
-    position: relative;
-    justify-content: center;
-    overflow: hidden;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .img-banner {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-    
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 
 .visible {
-    opacity: 1;
+  opacity: 1;
 }
 
 #titulo {
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 h1 {
-    font-family: 'Impact', sans-serif;
-    font-size: 5vw;
-    color: transparent;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    background: linear-gradient(45deg, #ff0000 30%, #ff3300 70%);
-    -webkit-background-clip: text;
-    text-shadow: 4px 4px 15px rgba(255, 0, 0, 0.8);
-    box-shadow: white;
-    text-align: center;
+  font-family: "Impact", sans-serif;
+  font-size: 8vw;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background: linear-gradient(45deg, #ff0000 30%, #ff3300 70%);
+  -webkit-background-clip: text;
+  text-shadow: 4px 4px 15px rgba(255, 0, 0, 0.8);
+  box-shadow: white;
+  text-align: center;
 }
 
 footer {
-    height: 50px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-saga {
+  padding-top: 50px;
+}
+
+.title-top3 {
+  padding-bottom: 0px;
+}
+
+@media (max-width: 760px) {
+  .top3,
+  .acordeon-container,
+  .resenas,
+  .form-container,
+  footer {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .video-container {
+    padding-top: 20px;
+  }
+}
+
+.form-container,
+.acordeon-container {
+  padding-top: 50px;
+}
+
+.form-container {
+  padding-bottom: 50px;
+  .col-lg-4 {
     justify-content: center;
+  }
+}
+
+.form-contacto {
+  justify-content: center;
+}
+
+.msg-form {
+  justify-content: center;
+  p {
+    font-family: "Creepster", cursive;
+    font-size: 1.5rem;
+    color: #ff0000;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
+    letter-spacing: 1px;
     text-align: center;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+      color: #ff6666;
+    }
+  }
+}
+
+.resenas {
+  overflow: scroll;
+  height: 55vh;
 }
